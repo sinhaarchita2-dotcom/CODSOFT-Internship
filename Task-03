@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Fixed exchange rates (example values, you can update as per real rates)
+        double usdToInr = 83.1;
+        double inrToUsd = 1 / 83.1;
+        double eurToInr = 88.5;
+        double inrToEur = 1 / 88.5;
+
+        System.out.println("=== Currency Converter ===");
+        System.out.println("1. USD to INR");
+        System.out.println("2. INR to USD");
+        System.out.println("3. EUR to INR");
+        System.out.println("4. INR to EUR");
+        System.out.print("Choose an option: ");
+        int choice = sc.nextInt();
+
+        System.out.print("Enter amount: ");
+        double amount = sc.next…
+=== Currency Converter ===
+1. USD to INR
+2. INR to USD
+3. EUR to INR
+4. INR to EUR
+Choose an option: 1
+Enter amount: 10
+10.0 USD = 831.0 INR
